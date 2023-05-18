@@ -66,7 +66,7 @@ module.exports = {
     for (let prop in req.body) {
       dataUpdate.push(`${prop}=${db.escape(req.body[prop])}`);
     }
-    let updateQuery = `UPDATE exercise.data_employee SET ${dataUpdate} WHERE ( id = ${req.params.id} )`;
+    let updateQuery = `UPDATE exercise.data_employee SET ${dataUpdate} WHERE ( id = ${req.query.id} )`;
     console.log(updateQuery);
 
     db.query(updateQuery, (err, results) => {

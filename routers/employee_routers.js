@@ -9,8 +9,8 @@ const routers = express.Router();
 // routers.get("/get", getData);
 
 routers.get("/", employee_controller.getData);
-routers.post("/add-data_employee", employee_controller.addData);
-routers.patch("/edit-data_employee/:id", employee_controller.patchData);
-routers.delete("/delete-data_employee/:id", employee_controller.deleteData);
+routers.post("/", employee_controller.addData);
+routers.patch("/", employee_controller.patchData);
+routers.delete("/", employee_controller.deleteData);
 
 module.exports = routers;

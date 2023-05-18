@@ -2,4 +2,4 @@
 
 const employee_controller = require("./employee_controller");
 
-module.export = { employee_controller };
+module.exports = { employee_controller };

@@ -2,7 +2,7 @@ const { db } = require("../database");
 
 module.exports = {
   getData: (req, res) => {
-    let scriptQuery = "SELECT * FROM exercise.data_employee;";
+    let scriptQuery = `SELECT * FROM exercise.data_employee;`;
 
     if (req.query.id) {
       scriptQuery = `SELECT * FROM exercise.data_employee WHERE id = ${db.escape(

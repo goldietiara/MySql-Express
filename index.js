@@ -12,7 +12,7 @@ app.use(express.json()); //pengganti body parser
 //   res.status(200).send("<h4>mysql Integrated with express, YEAY!!</h4>");
 // });
 
-const { employee_routers } = require("./router");
+const { employee_routers } = require("./routers");
 app.use("/data_employee", employee_routers);
 
 app.listen(PORT, () => console.log(`YEAYY API RUNNING ${PORT}`));
